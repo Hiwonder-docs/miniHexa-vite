@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:stage-main": "node scripts/stage_main_site.mjs",
+    "build:v1.1": "node scripts/build_version.mjs v1.1",
+    "build:v1.2": "node scripts/build_version.mjs v1.2",
+    "build:all": "node scripts/build_version.mjs v1.1 && node scripts/build_version.mjs v1.2"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "sharp": "^0.34.5"
+  }
+}
