@@ -46,11 +46,13 @@ function injectVersionSwitcher() {
   })
 
   li.querySelectorAll('.version-switcher__item').forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
       const ver = (item as HTMLElement).dataset.version!
       if (ver !== current) {
         const newPath = location.pathname.replace(`/en/${current}/`, `/en/${ver}/`)
-        window.location.href = newPath
+        window.location.replace(newPath)
       }
       menu.style.display = 'none'
     })
