@@ -61,6 +61,30 @@ function injectVersionSwitcher() {
   navList.insertBefore(li, navList.firstChild)
 }
 
+function interceptCrossVersionLinks() {
+  if (!inBrowser) return
+  document.addEventListener('click', (e) => {
+    const link = (e.target as HTMLElement)?.closest('a') as HTMLAnchorElement | null
+    if (!link) return
+
+    const href = link.getAttribute('href') || ''
+    if (!href || href.startsWith('http://') || href.startsWith('https://')) return
+
+    const currentVersion = location.pathname.includes('/en/v1.2/') ? 'v1.2' : 'v1.1'
+    const otherVersion = currentVersion === 'v1.1' ? 'v1.2' : 'v1.1'
+
+    if (href.includes(`/en/${otherVersion}/`)) {
+      e.preventDefault()
+      e.stopPropagation()
+      const origin = window.location.origin
+      const targetPath = href.startsWith('/')
+        ? href
+        : new URL(href, window.location.href).pathname
+      window.location.replace(origin + targetPath)
+    }
+  }, true)
+}
+
 function decodePath(path: string) {
   try {
     return decodeURI(path)
@@ -1049,6 +1073,7 @@ onMounted(() => {
   document.addEventListener('keydown', handleLightboxDocumentKeydown)
   patchLogoLink()
   injectVersionSwitcher()
+  interceptCrossVersionLinks()
   scheduleImageEnhancement()
   scheduleModuleEnhancement()
 })
