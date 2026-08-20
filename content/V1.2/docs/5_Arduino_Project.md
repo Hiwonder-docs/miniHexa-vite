@@ -28,9 +28,9 @@ Arduino IDE is a powerful software platform designed for Arduino microcontroller
 
 <img src="../_static/media/chapter_4/section_1/media/image5.png" style="width:600px"  />
 
-:::{Note}
-**If the installation prompts for chip driver installation, select "Always trust software from Arduino LLC (A)", then click "Install".**
-:::
+> [!NOTE]
+>
+> **If the installation prompts for chip driver installation, select "Always trust software from Arduino LLC (A)", then click "Install".**
 
 6. After installation is complete, click **Finish**.
 
@@ -131,10 +131,10 @@ Import the required Kinematics and SensorLib libraries before running the progra
 
 ### 5.1.2 Deviation Calibration
 
-:::{Note}
-* **If a new servo is installed or an original servo is removed, deviation calibration must be performed again.**
-* **After long-term use, calibrated servos may develop deviations again due to external force. Adjust them again if needed. Perform deviation calibration based on the actual motion behavior of the robot.**
-:::
+> [!NOTE]
+>
+> * **If a new servo is installed or an original servo is removed, deviation calibration must be performed again.**
+> * **After long-term use, calibrated servos may develop deviations again due to external force. Adjust them again if needed. Perform deviation calibration based on the actual motion behavior of the robot.**
 
 #### 5.1.2.1 Preparation
 
@@ -298,10 +298,10 @@ Because the overall motion of the robot involves the coupling of the gait algori
 
 <img src="../_static/media/chapter_4/section_4/media/image9.png" style="width:600px"   />
 
-:::{Note}
-* **In the actual design, a metal plate is mounted at joint `O3` at the end of the leg. Its width extends in the same direction as link r<sub>2</sub>. Therefore, in the following calculations, that width is treated as the foot-end offset `offset` and is included as part of link r<sub>2</sub>.**
-* **In the D-H parameter table and in the forward and inverse kinematics derivations below, r<sub>2</sub> already includes the foot-end offset `offset`.**
-:::
+> [!NOTE]
+>
+> * **In the actual design, a metal plate is mounted at joint `O3` at the end of the leg. Its width extends in the same direction as link r<sub>2</sub>. Therefore, in the following calculations, that width is treated as the foot-end offset `offset` and is included as part of link r<sub>2</sub>.**
+> * **In the D-H parameter table and in the forward and inverse kinematics derivations below, r<sub>2</sub> already includes the foot-end offset `offset`.**
 
 **D-H Parameter Table**
 
@@ -580,9 +580,9 @@ This section controls miniHexa to move in different directions.
 
 <img src="../_static/media/chapter_4/section_5/media/image5.png" style="width:600px"  />
 
-:::{Note}
-**Make sure to modify the development board configuration before program download.**
-:::
+> [!NOTE]
+>
+> **Make sure to modify the development board configuration before program download.**
 
 5. Click **Compile** first, then click **Upload**. When the output panel at the bottom displays the success message, the program has been downloaded successfully.
 
@@ -740,9 +740,9 @@ This section controls miniHexa to perform left and right turning motion.
 
 <img src="../_static/media/chapter_4/section_6/media/image5.png"  />
 
-:::{Note}
-**Make sure to modify the development board configuration before program download.**
-:::
+> [!NOTE]
+>
+> **Make sure to modify the development board configuration before program download.**
 
 5. Click **Compile** first, then click **Upload**. When the output panel at the bottom displays the success message, the program has been downloaded successfully.
 
@@ -820,9 +820,9 @@ After power-on, the hexapod robot repeatedly performs left and right arc turns.
 
 2. Modify the third value `omega` in `vel`. Here it is changed to `0.3f` to increase the turning angle.
 
-:::{Note}
-**The third `omega` value in `vel` should not be set too high. Otherwise, the effect of left rotation will greatly exceed the effect of forward translation, and the robot will behave more like it is rotating in place.**
-:::
+> [!NOTE]
+>
+> **The third `omega` value in `vel` should not be set too high. Otherwise, the effect of left rotation will greatly exceed the effect of forward translation, and the robot will behave more like it is rotating in place.**
 
 ```cpp
 void loop() {
@@ -866,9 +866,9 @@ This section controls miniHexa to move at different speeds.
 
 <img src="../_static/media/chapter_4/section_7/media/image5.png" style="width:600px"  />
 
-:::{Note}
-**Make sure to modify the development board configuration before program download.**
-:::
+> [!NOTE]
+>
+> **Make sure to modify the development board configuration before program download.**
 
 5. Click **Compile** first, then click **Upload**. When the output panel at the bottom displays the success message, the program has been downloaded successfully.
 
@@ -979,9 +979,9 @@ This section modifies the gait parameters of miniHexa so the robot can move in d
 
 <img src="../_static/media/chapter_4/section_8/media/image5.png" style="width:600px"  />
 
-:::{Note}
-**Make sure to modify the development board configuration before program download.**
-:::
+> [!NOTE]
+>
+> **Make sure to modify the development board configuration before program download.**
 
 5. Click **Compile** first, then click **Upload**. When the output panel at the bottom displays the success message, the program has been downloaded successfully.
 
@@ -1129,9 +1129,9 @@ This section changes the motion posture of the hexapod robot by modifying postur
 
 <img src="../_static/media/chapter_4/section_9/media/image5.png" style="width:600px"  />
 
-:::{Note}
-**Make sure to modify the development board configuration before program download.**
-:::
+> [!NOTE]
+>
+> **Make sure to modify the development board configuration before program download.**
 
 5. Click **Compile** first, then click **Upload**. When the output panel at the bottom displays the success message, the program has been downloaded successfully.
 
@@ -1354,9 +1354,9 @@ miniHexa includes 14 built-in action groups. These action groups are directly av
 
 <img src="../_static/media/chapter_4/section_10/media/image6.png" style="width:600px"  />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -1502,9 +1502,9 @@ The onboard sound sensor detects the intensity of external sound. The sound leve
 
 <img src="../_static/media/chapter_4/section_11/media/image6.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -1600,9 +1600,9 @@ The Glowy Ultrasonic Module integrates an I2C communication interface and suppor
 
 During distance measurement, the module automatically sends eight 40 kHz square wave pulses and checks whether a signal returns. If a signal returns, the module outputs a high-level signal. The duration of this high-level signal is the time from ultrasonic transmission to return.
 
-:::{Note}
-**The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
 
 <p id ="anther5.3.3.4"></p>
 
@@ -1624,9 +1624,9 @@ During distance measurement, the module automatically sends eight 40 kHz square 
 
 <img src="../_static/media/chapter_4/section_12/media/image6.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -1808,9 +1808,9 @@ The Glowy Ultrasonic Module integrates an I2C communication interface and suppor
 
 During distance measurement, the module automatically sends eight 40 kHz square wave pulses and checks whether a signal returns. If a signal returns, the module outputs a high-level signal. The duration of this high-level signal is the time from ultrasonic transmission to return.
 
-:::{Note}
-**The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
 
 #### 5.3.4.4 Program Download
 
@@ -1830,9 +1830,9 @@ During distance measurement, the module automatically sends eight 40 kHz square 
 
 <img src="../_static/media/chapter_4/section_13/media/image6.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -1982,9 +1982,9 @@ The Glowy Ultrasonic Module uses an I2C communication interface and can read dis
 
 During distance measurement, the module automatically sends eight 40 kHz square wave pulses and checks whether a signal returns. If a signal returns, the module outputs a high-level signal. The duration of this high-level signal is the time from ultrasonic transmission to return.
 
-:::{Note}
-**The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
 
 <p id ="anther5.3.5.4"></p>
 
@@ -2006,9 +2006,9 @@ During distance measurement, the module automatically sends eight 40 kHz square 
 
 <img src="../_static/media/chapter_4/section_14/media/image6.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2156,9 +2156,9 @@ It integrates a 3-axis MEMS gyroscope, a 3-axis MEMS accelerometer, and an expan
 
 <img src="../_static/media/chapter_4/section_15/media/image6.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2277,9 +2277,9 @@ Module wiring: Before running this program, connect the module to the miniHexa c
 
 <img src="../_static/media/chapter_4/section_16/media/image8.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2353,9 +2353,9 @@ The module uses an I2C communication interface and can read distance data measur
 
 During distance measurement, the module automatically sends eight 40 kHz square wave pulses and checks whether a signal returns. If a signal returns, the module outputs a high-level signal. The duration of this high-level signal is the time from ultrasonic transmission to return.
 
-:::{Note}
-**The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The Glowy Ultrasonic Module is factory-connected to the onboard I2C port. No additional wiring is required.**
 
 2. Dot matrix module
 
@@ -2391,9 +2391,9 @@ Installation: Mount the dot matrix module onto the miniHexa rear panel.
 
 <img src="../_static/media/chapter_4/section_17/media/image9.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2585,9 +2585,9 @@ Installation: Mount the touch module onto the miniHexa rear panel.
 
 <img src="../_static/media/chapter_4/section_18/media/image8.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2714,9 +2714,9 @@ Installation: Mount the infrared sensor module onto the miniHexa rear panel.
 
 <img src="../_static/media/chapter_4/section_19/media/image8.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -2862,9 +2862,9 @@ Installation: Mount the infrared sensor modules onto the two front legs of miniH
 
 <img src="../_static/media/chapter_4/section_20/media/image7.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -3010,9 +3010,9 @@ Use a 4-pin cable to connect the module to any I2C Port highlighted in red on th
 
 <img src="../_static/media/chapter_4/section_22/media/image1.png" style="width:600px" />
 
-:::{Note}
-**If the device does not appear in the port list, the computer may be missing the required driver. Locate the installation package in [2. Software\\7.ch34x Driver\ch341ser.exe](https://drive.google.com/drive/folders/1DQjHDVH7Nvnxklj2mXLUrNuWhbSHIlCe?usp=sharing) and install it manually.**
-:::
+> [!NOTE]
+>
+> **If the device does not appear in the port list, the computer may be missing the required driver. Locate the installation package in [2. Software\\7.ch34x Driver\ch341ser.exe](https://drive.google.com/drive/folders/1DQjHDVH7Nvnxklj2mXLUrNuWhbSHIlCe?usp=sharing) and install it manually.**
 
 2. Connect to the hotspot generated by the module: `HW_ESP32S3CAM`.
 
@@ -3075,9 +3075,9 @@ When the ESP32S3 runs the face detection function:
 |  `0x52` device address  |             Communication address of the ESP32S3             |
 | `0x01` register address | Read face data `[int16_t x, y, w, h]`. All data values are `0` when no face is detected |
 
-:::{Note}
-**In the face data, `x`, `y`, `w`, and `h` represent the face detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [5.4.3.4 Module Coordinate System Description](#anther5.4.3.4) for details about the pixel coordinate system used in this mode.**
-:::
+> [!NOTE]
+>
+> **In the face data, `x`, `y`, `w`, and `h` represent the face detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [5.4.3.4 Module Coordinate System Description](#anther5.4.3.4) for details about the pixel coordinate system used in this mode.**
 
 When the ESP32S3 runs the color recognition function:
 
@@ -3088,10 +3088,10 @@ When the ESP32S3 runs the color recognition function:
 | 0x01 register address | Read color 1 data. The read data format is int16_t x, y, w, h. All zeros if not detected. |
 
 
-:::{Note}
-* **The `x`, `y`, `w`, and `h` values in the color data represent the color block detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [5.4.3.4 Module Coordinate System Description](#anther5.4.3.4) for details about the pixel coordinate system used in this mode.**
-* **If multiple color blocks that meet the preset color thresholds appear in the camera view, the module selects the two largest by area and stores their bounding box data sequentially in registers `0x00` and `0x01`.**
-:::
+> [!NOTE]
+>
+> * **The `x`, `y`, `w`, and `h` values in the color data represent the color block detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [5.4.3.4 Module Coordinate System Description](#anther5.4.3.4) for details about the pixel coordinate system used in this mode.**
+> * **If multiple color blocks that meet the preset color thresholds appear in the camera view, the module selects the two largest by area and stores their bounding box data sequentially in registers `0x00` and `0x01`.**
 
 <p id ="anther5.4.3.4"></p>
 
@@ -3111,25 +3111,25 @@ The following are key points about the module image coordinate system:
 
 <img src="../_static/media/chapter_4/section_23/media/image2.png" style="width:600px" />
 
-:::{Note}
-**The image transmission mode uses a resolution of 320*240 to match the image data interface requirements of Hiwonder's mobile app.**
-:::
+> [!NOTE]
+>
+> **The image transmission mode uses a resolution of 320*240 to match the image data interface requirements of Hiwonder's mobile app.**
 
 * **Face Recognition Mode**
 
 <img src="../_static/media/chapter_4/section_23/media/image3.png" style="width:600px" />
 
-:::{Note}
-**To ensure smooth image processing, the face recognition mode uses a resolution of 240*240, which is the value determined from Hiwonder's internal testing.**
-:::
+> [!NOTE]
+>
+> **To ensure smooth image processing, the face recognition mode uses a resolution of 240*240, which is the value determined from Hiwonder's internal testing.**
 
 * **Color Recognition Mode**
 
 <img src="../_static/media/chapter_4/section_23/media/image4.png" style="width:600px" />
 
-:::{Note}
-**To ensure smooth image processing, the color recognition mode uses a resolution of 160*140, which is the value determined from Hiwonder's internal testing.**
-:::
+> [!NOTE]
+>
+> **To ensure smooth image processing, the color recognition mode uses a resolution of 160*140, which is the value determined from Hiwonder's internal testing.**
 
 #### 5.4.3.5 Notice
 
@@ -3165,9 +3165,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 During distance measurement, the module automatically sends out 8 pulses of 40 kHz square waves and waits for a signal to return. If a signal is returned, the module outputs a high-level signal, and the duration of the high-level signal corresponds to the time it takes for the ultrasound to travel to the object and back.
 
-:::{Note}
-**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
 
 #### 5.4.4.4 Program Download
 
@@ -3187,9 +3187,9 @@ During distance measurement, the module automatically sends out 8 pulses of 40 k
 
 <img src="../_static/media/chapter_4/section_24/media/image7.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Finally, click the upload button shown below to upload the code to the ESP32S3 vision module and wait for the upload to complete.
 
@@ -3217,9 +3217,9 @@ During distance measurement, the module automatically sends out 8 pulses of 40 k
 
 <img src="../_static/media/chapter_4/section_24/media/image13.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Click **Compile** first, then click **Upload**. After the upload is completed, the program download is completed if the following interface appears in the output box below the software.
 
@@ -3269,10 +3269,10 @@ When the vision module detects a color block of red, green, or blue, it controls
 
 5. In `loop()`, call the vision module sub-object `camera` of the sensor object and use `color_id_detection()` to read the **Color ID Register** of the vision module, storing the data into the `val` array.
 
-:::{Note}
-* **The vision module is preset to detect four colors: red, green, blue, and purple, with IDs `1` through `4`. The Color ID Register has 4 bytes, each corresponding to one color ID in order.**
-* **When any color is detected, the corresponding byte in the register stores its ID. Otherwise, it stores `0`.**
-:::
+> [!NOTE]
+>
+> * **The vision module is preset to detect four colors: red, green, blue, and purple, with IDs `1` through `4`. The Color ID Register has 4 bytes, each corresponding to one color ID in order.**
+> * **When any color is detected, the corresponding byte in the register stores its ID. Otherwise, it stores `0`.**
 
 ```cpp
 void loop() {
@@ -3316,10 +3316,10 @@ else if(val[0] == 0 && val[1] == 0 && val[2] == 3 && val[3] == 0) {
 
 This section explains how to use the ESP32-S3 for color recognition and how to modify the target color to be detected.
 
-:::{Note}
-* **The example program used in this section can be found at [03 Program Files\01 Color Recognition Program\esp32s3\ColorDetection](https://drive.google.com/drive/folders/1ShRIlMPliBl2_cQ_7Z52U0h5eQ5t0lVo?usp=sharing). This program is not related to the Color Tracking demo.**
-* **The threshold adjustment method described here also applies to the ESP32-S3 program for the Color Tracking demo.**
-:::
+> [!NOTE]
+>
+> * **The example program used in this section can be found at [03 Program Files\01 Color Recognition Program\esp32s3\ColorDetection](https://drive.google.com/drive/folders/1ShRIlMPliBl2_cQ_7Z52U0h5eQ5t0lVo?usp=sharing). This program is not related to the Color Tracking demo.**
+> * **The threshold adjustment method described here also applies to the ESP32-S3 program for the Color Tracking demo.**
 
 <p id ="anther5.4.5.2"></p>
 
@@ -3371,9 +3371,9 @@ Here the ESP32-S3 color recognition function is used as an example to demonstrat
 
 5. On the left side of the tool, the original imported image is shown. On the right side, the processed result after HSV segmentation is displayed. Drag the sliders until only the desired target color remains highlighted. In the recognition result on the right, only the image regions corresponding to the target color appear in white, while all other regions are shown in black.
 
-:::{Note}
-**The black areas indicate unrecognized regions, meaning that the current HSV thresholds do not detect these colors. The white areas indicate recognized regions, meaning that the current HSV thresholds successfully detect these colors.**
-:::
+> [!NOTE]
+>
+> **The black areas indicate unrecognized regions, meaning that the current HSV thresholds do not detect these colors. The white areas indicate recognized regions, meaning that the current HSV thresholds successfully detect these colors.**
 
 <img src="../_static/media/chapter_4/section_25/media/image10.png"  />
 
@@ -3393,9 +3393,9 @@ Here the ESP32-S3 color recognition function is used as an example to demonstrat
 
 8. The following source code shows the recognition color after modification. After the modification, the module no longer recognizes red but instead recognizes purple. When the serial port receives `color[0]`, it indicates that purple has been detected.
 
-:::{Note}
-**Make sure that the array elements follow the correct format and are separated by commas.**
-:::
+> [!NOTE]
+>
+> **Make sure that the array elements follow the correct format and are separated by commas.**
 
 ```cpp
 vector<color_info_t> std_color_info = {
@@ -3449,9 +3449,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 <img src="../_static/media/chapter_4/section_26/media/image7.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Finally, click the upload button shown below to upload the code to the ESP32S3 vision module and wait for the upload to complete.
 
@@ -3479,9 +3479,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 <img src="../_static/media/chapter_4/section_26/media/image13.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Click **Compile** first, then click **Upload**. After the upload is completed, the program download is completed if the following interface appears in the output box below the software.
 
@@ -3491,9 +3491,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 When the vision module detects a red object, the robot remains standing in place and adjusts its posture to ensure that the vision module always faces the red object.
 
-:::{Note}
-**The robot's rotation is limited in the program. It only tracks the object within a range of 20 degrees clockwise or counterclockwise from its current orientation.**
-:::
+> [!NOTE]
+>
+> **The robot's rotation is limited in the program. It only tracks the object within a range of 20 degrees clockwise or counterclockwise from its current orientation.**
 
 #### 5.4.6.6 Program Brief Analysis
 
@@ -3536,10 +3536,10 @@ When the vision module detects a red object, the robot remains standing in place
 
 5. In the `loop()` function, first call the vision module's `camera.green_block_detection()` function to read the data for the red color stored in the color register 2 and store it in the `val` array.
 
-:::{Note}
-* **The vision module can detect four preset colors: red, green, blue, and purple, with IDs `1` through `4`. The data for these four IDs are stored sequentially in addresses `0x00` through `0x03`.**
-* **Each ID has 4 bytes of data representing the detected color bounding box in the 2D image coordinate system: center point x-coordinate, center point y-coordinate, bounding box width, and bounding box height.**
-:::
+> [!NOTE]
+>
+> * **The vision module can detect four preset colors: red, green, blue, and purple, with IDs `1` through `4`. The data for these four IDs are stored sequentially in addresses `0x00` through `0x03`.**
+> * **Each ID has 4 bytes of data representing the detected color bounding box in the 2D image coordinate system: center point x-coordinate, center point y-coordinate, bounding box width, and bounding box height.**
 
 ```cpp
 void loop() {
@@ -3556,9 +3556,9 @@ void loop() {
 
 6. First, check whether the data for ID 2, red, are all zeros. If not, the module has detected the red color. Next, read the x-coordinate of the red bounding box center from `val[0]`, which ranges from `0` to `160`. Map this value to the robot's yaw increment `increase`, ranging from `-1` to `1`, and add it to the current yaw angle `yaw`.
 
-:::{Note}
-**In color recognition mode, the captured image width is 160 pixels, with `x = 0` at the left edge, `x = 160` at the right edge, and the center at `x = 80`.**
-:::
+> [!NOTE]
+>
+> **In color recognition mode, the captured image width is 160 pixels, with `x = 0` at the left edge, `x = 160` at the right edge, and the center at `x = 80`.**
 
 ```cpp
 void loop() {
@@ -3572,9 +3572,9 @@ void loop() {
 
 7. Write the updated `yaw` to the Euler angle array `att` controlling the robot's attitude, then call the `move()` function to execute the movement. Because `yaw` represents rotation around the Z-axis, the robot twists its posture to follow the moving object.
 
-:::{Note}
-**Due to the robot's physical structure, it cannot rotate indefinitely. Therefore, `yaw` is constrained to ensure the commanded posture remains kinematically feasible.**
-:::
+> [!NOTE]
+>
+> **Due to the robot's physical structure, it cannot rotate indefinitely. Therefore, `yaw` is constrained to ensure the commanded posture remains kinematically feasible.**
 
 ```cpp
   att = {0.0f, 0.0f, yaw};
@@ -3623,9 +3623,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 <img src="../_static/media/chapter_4/section_27/media/image7.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Finally, click the <img src="../_static/media/chapter_4/section_27/media/image8.png"  />to upload the code to the ESP32S3 vision module and wait for the upload to complete.
 
@@ -3635,9 +3635,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 <img src="../_static/media/chapter_4/section_27/media/image9.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 <img src="../_static/media/chapter_4/section_27/media/image10.png"  />
 
@@ -3663,9 +3663,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 When the vision module detects a red line, the robot moves along the line.
 
-:::{Note}
-**The vision module is set by default to recognize red lines. To change the default recognition color, refer to [5.4.5.3 Modifying the Target Color](#anther5.4.5.3).**
-:::
+> [!NOTE]
+>
+> **The vision module is set by default to recognize red lines. To change the default recognition color, refer to [5.4.5.3 Modifying the Target Color](#anther5.4.5.3).**
 
 #### 5.4.7.6 Program Brief Analysis
 
@@ -3706,9 +3706,9 @@ void setup() {
 
 5. In the main loop, first call the `region2_red_block_detection()` function of the vision module sub-object `camera` under the sensor object to read the red block data detected by the vision module, and store the data into the `val` array.
 
-:::{Note}
-**Each ID has 4 bytes of data representing the detected color bounding box in the 2D image coordinate system: center point x-coordinate, center point y-coordinate, bounding box width, and bounding box height.**
-:::
+> [!NOTE]
+>
+> **Each ID has 4 bytes of data representing the detected color bounding box in the 2D image coordinate system: center point x-coordinate, center point y-coordinate, bounding box width, and bounding box height.**
 
 ```cpp
 void loop() {
@@ -3720,9 +3720,9 @@ void loop() {
 
 6. Compare the value of `val[0]`, which represents the x-coordinate of the center point of the detected block. If it is greater than `120`, set the y component of the `vel` parameter to `1` and the z component to `-0.1`. These values are used to control the robot to turn right.
 
-:::{Note}
-**In color recognition mode, the captured image width is 160 pixels, with `x = 0` at the left edge, `x = 160` at the right edge, and the center at `x = 80`.**
-:::
+> [!NOTE]
+>
+> **In color recognition mode, the captured image width is 160 pixels, with `x = 0` at the left edge, `x = 160` at the right edge, and the center at `x = 80`.**
 
 ```cpp
 if(val[0] > 120) {
@@ -3794,9 +3794,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 <img src="../_static/media/chapter_4/section_28/media/image7.png" style="width:600px" />
 
-:::{Note}
-**Make sure to set the correct controller configuration before uploading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure to set the correct controller configuration before uploading the program.**
 
 5. Finally, click the upload button shown below to upload the code to the ESP32S3 vision module and wait for the upload to complete.
 
@@ -3865,9 +3865,9 @@ When the vision module detects a face, the robot executes the acting-cute action
 
 5. In the main loop, first call the `face_data_receive()` function from the vision module sub-object `camera` of the robot object to read the **Face Recognition Register** of the vision module. The data is then stored into the `val` array.
 
-:::{Note}
-**The Face Recognition Register consists of 4 bytes, storing the following data in order: the x-coordinate of the bounding box center, the y-coordinate of the bounding box center, the width of the bounding box, and the height of the bounding box, all in the captured image's 2D coordinate system.**
-:::
+> [!NOTE]
+>
+> **The Face Recognition Register consists of 4 bytes, storing the following data in order: the x-coordinate of the bounding box center, the y-coordinate of the bounding box center, the width of the bounding box, and the height of the bounding box, all in the captured image's 2D coordinate system.**
 
 ```cpp
 void loop() {
@@ -4040,9 +4040,9 @@ Installation: mount the voice interaction module on the rear panel of miniHexa.
 
 The module uses an I2C communication interface and can read the distance measured by the ultrasonic sensor through I2C communication. Two RGB LEDs are integrated at the ultrasonic probe position. The brightness can be adjusted. Color changes and color mixing across the red channel `R`, green channel `G`, and blue channel `B` make full-color lighting effects possible.
 
-:::{Note}
-**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
-:::
+> [!NOTE]
+>
+> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
 
 #### 5.5.4.4 Program Download
 
@@ -4062,9 +4062,9 @@ The module uses an I2C communication interface and can read the distance measure
 
 <img src="../_static/media/chapter_4/section_31/media/image9.png" style="width:600px" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile**, then click **Upload**. When the following screen appears in the output box at the bottom of the software, the program download is complete.
 
@@ -4123,11 +4123,11 @@ Call the `set_ultrasound_rgb()` function of the sensor object to send the light 
 
 Call the `speak()` function of the voice interaction module subobject under the sensor object. The voice interaction module plays back entry ID `5` of the playback phrase type, `Obstacle ahead`.
 
-:::{Note}
-* **1. The `speak()` function is non-blocking. This function only sends an instruction to the voice interaction module and then exits.**
-* **2. To prevent the loop from entering repeatedly within a short time when an obstacle is too close and calling `speak()` again before the previous playback finishes, protect the execution of this function. The internal `speak()` function can run only when the real-time system time obtained by `millis()` is at least `3000ms` greater than the system time `tickstart` recorded during the previous playback.**
-* **3. The `speak()` function can also play back entries of the command word type. For example, `asr.speak(ASR_COMMAND, 1)` can play back the response phrase `Going straight` for command word type entry ID `1`.**
-:::
+> [!NOTE]
+>
+> * **1. The `speak()` function is non-blocking. This function only sends an instruction to the voice interaction module and then exits.**
+> * **2. To prevent the loop from entering repeatedly within a short time when an obstacle is too close and calling `speak()` again before the previous playback finishes, protect the execution of this function. The internal `speak()` function can run only when the real-time system time obtained by `millis()` is at least `3000ms` greater than the system time `tickstart` recorded during the previous playback.**
+> * **3. The `speak()` function can also play back entries of the command word type. For example, `asr.speak(ASR_COMMAND, 1)` can play back the response phrase `Going straight` for command word type entry ID `1`.**
 
 ```cpp
 if (dis < 100) {         // Breathing light mode, 0.1s cycle, red
@@ -4171,9 +4171,9 @@ Installation: mount the voice interaction module on the rear panel of miniHexa.
 
 **Action Group Download**
 
-:::{Note}
-**miniHexa is factory-flashed with the PC software program. Downloading other programs overwrites this function. To download the action groups again, follow the steps below to download the program again.**
-:::
+> [!NOTE]
+>
+> **miniHexa is factory-flashed with the PC software program. Downloading other programs overwrites this function. To download the action groups again, follow the steps below to download the program again.**
 
 1. Connect miniHexa to a PC with a Type-C data cable.
 

@@ -16,9 +16,9 @@
 
 ### 3.1.2 Launch the Software
 
-:::{Note}
-**The PC software is portable and does not need installation. Install the driver on the PC before use.**
-:::
+> [!NOTE]
+>
+> **The PC software is portable and does not need installation. Install the driver on the PC before use.**
 
 1) Find the PC software [**02 PC Software Installation Package\02 PC Software\MiniHexa.exe**](https://drive.google.com/drive/folders/1mL_xzRC31Jd9fkhl4Ro52ILncmW3Jg3U?usp=sharing).
 
@@ -32,10 +32,10 @@
 
 #### Preparation
 
-:::{Note}
-* **Before this step, make sure the factory APP program has been flashed to the ESP32 controller. This program supports both APP control and PC software control.**
-* **miniHexa is preloaded with the factory program before shipment and can be powered on for direct operation. If another program has overwritten it, find the factory program in [03 PC Software Program Files](https://drive.google.com/drive/folders/16SWjUtvrDMPfkTLHSJdKKmKxgA4cDKFW?usp=sharing) and download it again. For the download method, see [3.1.5 APP Program Download Instructions (Optional)](#anther3.1.5).**
-:::
+> [!NOTE]
+>
+> * **Before this step, make sure the factory APP program has been flashed to the ESP32 controller. This program supports both APP control and PC software control.**
+> * **miniHexa is preloaded with the factory program before shipment and can be powered on for direct operation. If another program has overwritten it, find the factory program in [03 PC Software Program Files](https://drive.google.com/drive/folders/16SWjUtvrDMPfkTLHSJdKKmKxgA4cDKFW?usp=sharing) and download it again. For the download method, see [3.1.5 APP Program Download Instructions (Optional)](#anther3.1.5).**
 
 1) Turn on the miniHexa power switch.
 
@@ -57,9 +57,9 @@
 
 * **Wi-Fi Connection**
 
-:::{Note}
-**To connect the robot in this way, prepare a hotspot before powering on the robot. A Wi-Fi router or mobile hotspot can be used. Set both the hotspot name and password to "hiwonder".**
-:::
+> [!NOTE]
+>
+> **To connect the robot in this way, prepare a hotspot before powering on the robot. A Wi-Fi router or mobile hotspot can be used. Set both the hotspot name and password to "hiwonder".**
 
 1) After the robot powers on, it automatically searches for and connects to the hotspot named **hiwonder** with the password **hiwonder**. Wait a moment, then connect the PC to the same hotspot.
 
@@ -93,9 +93,9 @@ The PC software interacts with miniHexa in three modes for different functions:
 
 <img src="../_static/media/chapter_3/section_1/media/image15.png" class="common_img"  />
 
-:::{Note}
-**For details about Deviation Mode in the PC software, see [5.1 Arduino IDE Installation and Deviation Calibration\5.1.2 Deviation Calibration](https://drive.google.com/drive/folders/1_sjERc-lw-v9gUabl3QbM24jkGcvWKrN?usp=sharing). This section does not explain it further.**
-:::
+> [!NOTE]
+>
+> **For details about Deviation Mode in the PC software, see [5.1 Arduino IDE Installation and Deviation Calibration\5.1.2 Deviation Calibration](https://drive.google.com/drive/folders/1_sjERc-lw-v9gUabl3QbM24jkGcvWKrN?usp=sharing). This section does not explain it further.**
 
 The **General Mode** and **Posture Control** modes in the PC software are introduced in [3.2 Omnidirectional Movement Control](#anther3.2) and [3.3 Posture Control](#anther3.3).
 
@@ -123,9 +123,9 @@ The miniHexa is factory-flashed with the APP program. Downloading other feature 
 
 <img src="../_static/media/chapter_3/section_1/media/image18.png" class="common_img"  />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5) Click **Compile** first, then click **Upload**. When the following screen appears in the output box at the bottom of the software after upload is complete, the program download is complete.
 
@@ -212,9 +212,9 @@ When controlling posture, the robot stands still in place and keeps its center o
 
 ### 3.4.1 Launch the Software
 
-:::{Note}
-**The PC software is portable and does not need installation. Install the [driver](https://drive.google.com/drive/folders/1qN7LtmMBUqRqhJRAbwXvCm2j593ODaK7?usp=sharing) on the PC before use.**
-:::
+> [!NOTE]
+>
+> **The PC software is portable and does not need installation. Install the [driver](https://drive.google.com/drive/folders/1qN7LtmMBUqRqhJRAbwXvCm2j593ODaK7?usp=sharing) on the PC before use.**
 
 1. Find the PC software [**MiniHexa.exe**](https://drive.google.com/drive/folders/1mL_xzRC31Jd9fkhl4Ro52ILncmW3Jg3U?usp=sharing).
 
@@ -228,9 +228,9 @@ When controlling posture, the robot stands still in place and keeps its center o
 
 ### 3.4.2 Device Connection
 
-:::{Note}
-**This section uses serial port connection as an example. For the Wi-Fi connection method, see [3.1 PC Software Introduction](#anther3.1).**
-:::
+> [!NOTE]
+>
+> **This section uses serial port connection as an example. For the Wi-Fi connection method, see [3.1 PC Software Introduction](#anther3.1).**
 
 1) Turn on the miniHexa controller board switch.
 
@@ -355,9 +355,9 @@ Download the reference sample action group file in [**2. Software\10. Action Gro
 
 Create a **Wave** action group consisting of 9 actions.
 
-:::{Note}
-**The actions in this section are only examples and are intended to help quickly learn the Action Edit feature. To reference standard actions, go to the reference sample action group files in [2. Software\10. Action Group Files](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).**
-:::
+> [!NOTE]
+>
+> **The actions in this section are only examples and are intended to help quickly learn the Action Edit feature. To reference standard actions, go to the reference sample action group files in [2. Software\10. Action Group Files](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).**
 
 ### 3.6.2 Action Implementation
 
@@ -383,9 +383,9 @@ Create a **Wave** action group consisting of 9 actions.
 
 <img src="../_static/media/chapter_3/section_5/media/image5.png" class="common_img"  />
 
-:::{Note}
-**Hold down the left mouse button and quickly click the slider for fine adjustment.**
-:::
+> [!NOTE]
+>
+> **Hold down the left mouse button and quickly click the slider for fine adjustment.**
 
 3) Click **Add Action** to add the bent and extended action to the action list on the right.
 
@@ -437,9 +437,9 @@ Learn the miniHexa action file integration function and merge action groups.
 
 <img src="../_static/media/chapter_3/section_6/media/image2.jpeg" class="common_img"  alt="11" />
 
-:::{Note}
-**If the factory program is running on the core board, briefly press the K1 button on the servo controller once after power-on to switch the working mode. When the buzzer beeps twice, the robot enters PC software control mode and starts processing PC software control operations.**
-:::
+> [!NOTE]
+>
+> **If the factory program is running on the core board, briefly press the K1 button on the servo controller once after power-on to switch the working mode. When the buzzer beeps twice, the robot enters PC software control mode and starts processing PC software control operations.**
 
 3) Open the PC software, connect the software serial port, click the **Integrate Action File** button in the Action Group Settings Area, and open Action Group 6 in [**2. Software\10. Action Group Files**](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).
 
@@ -461,9 +461,9 @@ Learn the miniHexa action file integration function and merge action groups.
 
 <img src="../_static/media/chapter_3/section_6/media/image8.png" class="common_img"  />
 
-:::{Note}
-**If too many actions are integrated in the Action Group Detail List, the PC software prompts that the limit has been exceeded. In this case, the action cannot be downloaded to the controller board and can only be run online for preview.**
-:::
+> [!NOTE]
+>
+> **If too many actions are integrated in the Action Group Detail List, the PC software prompts that the limit has been exceeded. In this case, the action cannot be downloaded to the controller board and can only be run online for preview.**
 
 ## 3.8 APP Custom Control
 

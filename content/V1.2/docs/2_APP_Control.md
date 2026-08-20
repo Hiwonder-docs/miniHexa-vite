@@ -1,8 +1,8 @@
 # 2. APP Control
 
-:::{Note}
-**miniHexa is preloaded with the APP control program before shipment and can be used directly. Android is used as an example here.**
-:::
+> [!NOTE]
+>
+> **miniHexa is preloaded with the APP control program before shipment and can be used directly. Android is used as an example here.**
 
 ## 2.1 Mobile APP Installation
 
@@ -14,10 +14,10 @@ Alternatively, scan the QR code to download it:
 
 <img src="../_static/media/chapter_2/section_1/media/image30.png" style="width:200px" class="common_img" />
 
-:::{Note}
-* **Before using the APP, enable Bluetooth and Location Services in the phone settings.**
-* **Use the Bluetooth button in the APP to pair and connect the device. Do not pair through the phone settings with a pairing key.**
-:::
+> [!NOTE]
+>
+> * **Before using the APP, enable Bluetooth and Location Services in the phone settings.**
+> * **Use the Bluetooth button in the APP to pair and connect the device. Do not pair through the phone settings with a pairing key.**
 
 1. Turn on the miniHexa power switch.
 
@@ -31,9 +31,9 @@ Alternatively, scan the QR code to download it:
 
 <img src="../_static/media/chapter_2/section_1/media/image5.png" style="width:600px" class="common_img" />
 
-:::{Note}
-**If a name related to "miniHexa" is not displayed at first, tap "Search Again" to find the device.**
-:::
+> [!NOTE]
+>
+> **If a name related to "miniHexa" is not displayed at first, tap "Search Again" to find the device.**
 
 4. After the connection succeeds, the Bluetooth icon in the upper-right corner stays on, and the battery level appears on the left.
 
@@ -94,9 +94,9 @@ miniHexa is factory-flashed with the APP program. Downloading other feature prog
 
 <img src="../_static/media/chapter_2/section_1/media/image28.png" style="width:600px" class="common_img" />
 
-:::{Note}
-**Make sure the development board configuration is modified before downloading the program.**
-:::
+> [!NOTE]
+>
+> **Make sure the development board configuration is modified before downloading the program.**
 
 5. Click **Compile** first, then click **Upload**. When the following screen appears in the output box at the bottom of the software after upload is complete, the program download is complete.
 
