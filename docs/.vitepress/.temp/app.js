@@ -3102,7 +3102,7 @@ const _sfc_main$v = /* @__PURE__ */ defineComponent({
   __name: "VPNavBarSearch",
   __ssrInlineRender: true,
   setup(__props) {
-    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.C-cMalFf.js"));
+    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.C5VNcYjY.js"));
     const VPAlgoliaSearchBox = () => null;
     const { theme: theme2 } = useData();
     const loaded = ref(false);
@@ -5066,7 +5066,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           e.stopPropagation();
           const ver = item.dataset.version;
           if (ver !== current) {
-            const newPath = location.pathname.replace(`/en/${current}/`, `/en/${ver}/`);
+            const versionRootPattern = new RegExp(`/en/${current}(?:/.*)?$`);
+            const newPath = location.pathname.replace(versionRootPattern, `/en/${ver}/`);
             window.location.replace(newPath);
           }
           menu.style.display = "none";

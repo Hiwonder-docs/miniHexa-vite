@@ -51,7 +51,8 @@ function injectVersionSwitcher() {
       e.stopPropagation()
       const ver = (item as HTMLElement).dataset.version!
       if (ver !== current) {
-        const newPath = location.pathname.replace(`/en/${current}/`, `/en/${ver}/`)
+        const versionRootPattern = new RegExp(`/en/${current}(?:/.*)?$`)
+        const newPath = location.pathname.replace(versionRootPattern, `/en/${ver}/`)
         window.location.replace(newPath)
       }
       menu.style.display = 'none'
