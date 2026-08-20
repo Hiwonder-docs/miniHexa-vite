@@ -1,6 +1,6 @@
 ---
 layout: page-redirect
-redirectTo: /page/1_Read_First.html
+redirectTo: /docs/1_Read_First.html
 ---
 
 正在跳转到内容页面...
