@@ -1,4 +1,4 @@
-import { rm, cp } from 'fs/promises'
+import { rm, cp, readFile, writeFile } from 'fs/promises'
 import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 import { execSync } from 'child_process'
@@ -28,6 +28,8 @@ const versionContentMap = {
 const contentDirName = versionContentMap[version] || version
 const projectName = 'miniHexa'
 const docsBase = `/projects/${projectName}/en/${version}/`
+const rootIndexPath = join(repositoryRoot, 'docs', 'index.md')
+const versionIndexPath = join(repositoryRoot, 'content', contentDirName, 'docs', 'index.md')
 
 console.log(`\n========== Building ${version} ==========`)
 console.log(`DOCS_BASE: ${docsBase}`)
@@ -36,29 +38,37 @@ console.log(`DOCS_BASE: ${docsBase}`)
 const contentDir = join(repositoryRoot, 'content', contentDirName)
 const docsDocsDir = join(repositoryRoot, 'docs', 'docs')
 const docsStaticDir = join(repositoryRoot, 'docs', '_static')
+const originalRootIndex = await readFile(rootIndexPath, 'utf8')
+const versionRootIndex = await readFile(versionIndexPath, 'utf8')
 
-console.log('\n[1/3] Copying content files...')
-await rm(docsDocsDir, { recursive: true, force: true })
-await rm(docsStaticDir, { recursive: true, force: true })
-await cp(join(contentDir, 'docs'), docsDocsDir, { recursive: true })
-await cp(join(contentDir, '_static'), docsStaticDir, { recursive: true })
-console.log('  Done.')
+try {
+  await writeFile(rootIndexPath, versionRootIndex)
 
-// 2. Build with VitePress
-console.log('\n[2/3] Building with VitePress...')
-execSync('npx vitepress build docs', {
-  stdio: 'inherit',
-  cwd: repositoryRoot,
-  env: { ...process.env, DOCS_BASE: docsBase, DOCS_VERSION: version }
-})
-console.log('  Done.')
+  console.log('\n[1/3] Copying content files...')
+  await rm(docsDocsDir, { recursive: true, force: true })
+  await rm(docsStaticDir, { recursive: true, force: true })
+  await cp(join(contentDir, 'docs'), docsDocsDir, { recursive: true })
+  await cp(join(contentDir, '_static'), docsStaticDir, { recursive: true })
+  console.log('  Done.')
 
-// 3. Stage to projects directory
-console.log('\n[3/3] Staging to projects directory...')
-execSync('node scripts/stage_main_site.mjs', {
-  stdio: 'inherit',
-  cwd: repositoryRoot,
-  env: { ...process.env, DOCS_VERSION: version }
-})
+  // 2. Build with VitePress
+  console.log('\n[2/3] Building with VitePress...')
+  execSync('npx vitepress build docs', {
+    stdio: 'inherit',
+    cwd: repositoryRoot,
+    env: { ...process.env, DOCS_BASE: docsBase, DOCS_VERSION: version }
+  })
+  console.log('  Done.')
 
-console.log(`\n========== ${version} build complete ==========\n`)
+  // 3. Stage to projects directory
+  console.log('\n[3/3] Staging to projects directory...')
+  execSync('node scripts/stage_main_site.mjs', {
+    stdio: 'inherit',
+    cwd: repositoryRoot,
+    env: { ...process.env, DOCS_VERSION: version }
+  })
+
+  console.log(`\n========== ${version} build complete ==========\n`)
+} finally {
+  await writeFile(rootIndexPath, originalRootIndex)
+}
